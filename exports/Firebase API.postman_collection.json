@@ -1,0 +1,341 @@
+{
+	"info": {
+		"_postman_id": "7f364d18-7703-446c-ba03-5bcb43d00249",
+		"name": "Firebase Typescript API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "findAllProducts",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJSb2xlIjoiQWRtaW4iLCJJc3N1ZXIiOiJNYW5nbyIsIlVzZXJuYW1lIjoib3duZXIiLCJpYXQiOjE2NDg4MzA3NzJ9.-2fEbjElWdNT4FW6e19HmxuteUALN1dxXEyCF9BuFQg",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/product-3a5fb/us-central1/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"product-3a5fb",
+						"us-central1",
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findAllProducts [REMOTE]",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJSb2xlIjoiQWRtaW4iLCJJc3N1ZXIiOiJNYW5nbyIsIlVzZXJuYW1lIjoib3duZXIiLCJpYXQiOjE2NDg4MzA3NzJ9.-2fEbjElWdNT4FW6e19HmxuteUALN1dxXEyCF9BuFQg",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://us-central1-product-3a5fb.cloudfunctions.net/api/products",
+					"protocol": "https",
+					"host": [
+						"us-central1-product-3a5fb",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "saveProduct",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJSb2xlIjoiQWRtaW4iLCJJc3N1ZXIiOiJNYW5nbyIsIlVzZXJuYW1lIjoib3duZXIiLCJpYXQiOjE2NDg4MzA3NzJ9.-2fEbjElWdNT4FW6e19HmxuteUALN1dxXEyCF9BuFQg",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 2,\n    \"code\": \"002\",\n    \"description\": \"Orange\",\n    \"price\": 6.0,\n    \"active\": false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/product-3a5fb/us-central1/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"product-3a5fb",
+						"us-central1",
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "saveProduct [REMOTE]",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJSb2xlIjoiQWRtaW4iLCJJc3N1ZXIiOiJNYW5nbyIsIlVzZXJuYW1lIjoib3duZXIiLCJpYXQiOjE2NDg4MzA3NzJ9.-2fEbjElWdNT4FW6e19HmxuteUALN1dxXEyCF9BuFQg",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 2,\n    \"code\": \"002\",\n    \"description\": \"Orange\",\n    \"price\": 6.0,\n    \"active\": false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-product-3a5fb.cloudfunctions.net/api/products",
+					"protocol": "https",
+					"host": [
+						"us-central1-product-3a5fb",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateProduct",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJSb2xlIjoiQWRtaW4iLCJJc3N1ZXIiOiJNYW5nbyIsIlVzZXJuYW1lIjoib3duZXIiLCJpYXQiOjE2NDg4MzA3NzJ9.-2fEbjElWdNT4FW6e19HmxuteUALN1dxXEyCF9BuFQg",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"code\": \"002\",\n    \"description\": \"Orange\",\n    \"price\": 4.5,\n    \"active\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/product-3a5fb/us-central1/api/products/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"product-3a5fb",
+						"us-central1",
+						"api",
+						"products",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateProduct [REMOTE]",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJSb2xlIjoiQWRtaW4iLCJJc3N1ZXIiOiJNYW5nbyIsIlVzZXJuYW1lIjoib3duZXIiLCJpYXQiOjE2NDg4MzA3NzJ9.-2fEbjElWdNT4FW6e19HmxuteUALN1dxXEyCF9BuFQg",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"code\": \"002\",\n    \"description\": \"Orange\",\n    \"price\": 4.5,\n    \"active\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-product-3a5fb.cloudfunctions.net/api/products/2",
+					"protocol": "https",
+					"host": [
+						"us-central1-product-3a5fb",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"api",
+						"products",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "removeProduct",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJSb2xlIjoiQWRtaW4iLCJJc3N1ZXIiOiJNYW5nbyIsIlVzZXJuYW1lIjoib3duZXIiLCJpYXQiOjE2NDg4MzA3NzJ9.-2fEbjElWdNT4FW6e19HmxuteUALN1dxXEyCF9BuFQg",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/product-3a5fb/us-central1/api/products/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"product-3a5fb",
+						"us-central1",
+						"api",
+						"products",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "removeProduct [REMOTE]",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJSb2xlIjoiQWRtaW4iLCJJc3N1ZXIiOiJNYW5nbyIsIlVzZXJuYW1lIjoib3duZXIiLCJpYXQiOjE2NDg4MzA3NzJ9.-2fEbjElWdNT4FW6e19HmxuteUALN1dxXEyCF9BuFQg",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://us-central1-product-3a5fb.cloudfunctions.net/api/products/2",
+					"protocol": "https",
+					"host": [
+						"us-central1-product-3a5fb",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"api",
+						"products",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
