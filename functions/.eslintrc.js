@@ -26,6 +26,11 @@ module.exports = {
   ],
   rules: {
     "quotes": ["error", "double"],
-    "import/no-unresolved": 0,
-  },
+    "import/no-unresolved": 0,     
+    "max-len": [
+      "warn", {
+        "ignoreStrings": true
+      }
+    ]
+  },  
 };
