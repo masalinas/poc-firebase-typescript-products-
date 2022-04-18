@@ -1,7 +1,7 @@
 ## Description
 PoC Firebase TypeScript Product Function
 
-## Deploy Firebase Project
+## Create Firebase Project
 
 Create a Firebase project from [Firebase Console](https://console.firebase.google.com/)
 
