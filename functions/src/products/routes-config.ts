@@ -1,13 +1,12 @@
-import {Firestore} from "@google-cloud/firestore";
 import {Application} from "express";
 
-import {controller, findAll, save, update, remove} from "./controller";
 import {isAuthenticated} from "../auth/authenticated";
+import {findAll, findByCode, save, update, remove} from "./controller";
 
-export function routesConfig(app: Application, db: Firestore) {
-  controller(db);
-
+export function routesConfig(app: Application) {
   app.get("/products", [isAuthenticated, findAll]);
+
+  app.get("/products/:code", [isAuthenticated, findByCode]);
 
   app.post("/products", [isAuthenticated, save]);
 

@@ -10,7 +10,8 @@
     "useUnknownInCatchVariables": false,
     "typeRoots": [
       "node_modules/@types"
-    ]
+    ],
+    "watch": true
   },
   "compileOnSave": true,
   "include": [

@@ -79,6 +79,81 @@
 			"response": []
 		},
 		{
+			"name": "FindById",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJSb2xlIjoiQWRtaW4iLCJJc3N1ZXIiOiJNYW5nbyIsIlVzZXJuYW1lIjoib3duZXIiLCJpYXQiOjE2NDg4MzA3NzJ9.-2fEbjElWdNT4FW6e19HmxuteUALN1dxXEyCF9BuFQg",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/product-3a5fb/us-central1/api/products/002",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"product-3a5fb",
+						"us-central1",
+						"api",
+						"products",
+						"002"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindById [REMOTE]",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJSb2xlIjoiQWRtaW4iLCJJc3N1ZXIiOiJNYW5nbyIsIlVzZXJuYW1lIjoib3duZXIiLCJpYXQiOjE2NDg4MzA3NzJ9.-2fEbjElWdNT4FW6e19HmxuteUALN1dxXEyCF9BuFQg",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://us-central1-product-3a5fb.cloudfunctions.net/api/products/002",
+					"protocol": "https",
+					"host": [
+						"us-central1-product-3a5fb",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"api",
+						"products",
+						"002"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "saveProduct",
 			"request": {
 				"auth": {
