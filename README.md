@@ -74,6 +74,12 @@ We must to login in Google Cloud Platform at first
 firebase login
 ```
 
+## Initialize firebase functions project
+
+```sh
+firebase init functions
+```
+
 ## Debug local service
 
 We could debug our local service before deploy in Google Cloud Platform
