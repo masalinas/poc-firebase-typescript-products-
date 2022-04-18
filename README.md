@@ -21,7 +21,7 @@ STEP 03:
 
 ![Firebase Project Confirmation](captures/firebase_project_confirmation.png "Firebase Project Confirmation")
 
-## Configure Firebase Project
+## Configure Firestore Database Project
 
 Now we create a Firestore Database a NoSQL database from Firebase Console
 
