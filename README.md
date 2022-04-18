@@ -1,35 +1,6 @@
 ## Description
 PoC Firebase TypeScript Product Function
 
-## Debug Typescript functions
-
-**STEP 01**: Install dependency **copyfiles** to copy non ts files to lib compiled destination folder:
-
-```sh
-npm install --save.dev copyfiles
-```
-
-**STEP02**: Configure typescript tsconfig.json file to watch changes when debug:
-
-```sh
-{
-    ...
-    "watch": true
-}
-```
-
-**STEP 03**: Compile from functions folder. The build process keep wait in watch mode.
-
-```sh
-npm build
-```
-
-**STEP 04**: From root folder debug your firebase functions executing:
-
-```sh
-firebase serve
-```
-
 ## Deploy Firebase Project
 
 Create a Firebase project from [Firebase Console](https://console.firebase.google.com/)
@@ -105,3 +76,33 @@ https://us-central1-product-3a5fb.cloudfunctions.net/app
 
 Firebase from Google Functions on Google Cloud Platform
 ![Google Functions GCP](captures/firebase_gcp.png "Google Functions GCP")
+
+## Debug Typescript functions
+
+**STEP 01**: Install dependency **copyfiles** to copy non ts files to lib compiled destination folder:
+
+```sh
+npm install --save.dev copyfiles
+```
+
+**STEP02**: Configure typescript tsconfig.json file to watch changes when debug:
+
+```sh
+{
+    ...
+    "watch": true
+}
+```
+
+**STEP 03**: Compile from functions folder. The build process keep wait in watch mode.
+
+```sh
+npm build
+```
+
+**STEP 04**: From root folder debug your firebase functions executing:
+
+```sh
+firebase serve
+```
+
